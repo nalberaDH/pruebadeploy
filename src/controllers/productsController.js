@@ -2,8 +2,6 @@ const data = require('../database/data');
 const path = require('path');
 
 const allProducts = (req,res) => {
-    //res.status(200).json({Message: 'Hola'})
-    //res.json(data);
     res.render(path.join(__dirname,'../views/products'),{'allProducts':data});
 }
 
