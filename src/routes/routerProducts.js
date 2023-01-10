@@ -4,6 +4,9 @@ const { allProducts, getProductById } = require('../controllers/productsControll
 
 const router = express.Router();
 
+router.get('/',(req,res) => {
+    res.send('<h1>Hola Mundo</h1>')
+})
 
 router.get('/products', allProducts);
 
