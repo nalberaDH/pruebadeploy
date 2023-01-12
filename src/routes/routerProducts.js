@@ -12,5 +12,7 @@ router.get('/products', allProducts);
 
 router.get('/product/:id',getProductById);
 
-
+router.get('/about', (req,res) => {
+    res.send('<h1>Soy about.....</h1>')
+})
 module.exports = router;
